@@ -1,3 +1,6 @@
+h1 {
+  color: white;
+}
 .NavBar {
     list-style-type: none;
     margin: 0;
@@ -7,17 +10,18 @@
   }
   
   .NavBar a {
-    float: left;
-  }
-  
-  .NavBar a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    float: right;
   }
   
   .NavBar a:hover {
     background-color: #111;
+  }
+
+  .CartWidget {
+    float: right;
   }
