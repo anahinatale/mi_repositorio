@@ -11,3 +11,107 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  max-width: 1550px;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  box-shadow: 0 2px 6px #372917;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.ItemList{
+  margin-top: 150px;
+}
+
+.productos {
+  padding: 5rem 2rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  gap: 3rem 1rem;
+  box-sizing: border-box;
+}
+
+.producto{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 6px solid transparent;
+  border-radius: 5px;
+}
+
+.producto:hover{
+  border: 6px solid #f9e99aa2;
+}
+
+.producto_footer {
+  padding: 1rem;
+}
+
+.producto_footer h1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.producto_footer p {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.842);
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.producto .price{
+  font-size: 2rem;
+}
+
+.producto .button {
+  width: 100%;
+  height: 45px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem 2rem;  
+}
+
+.button .btn{
+  border: none;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 5px;  
+}
+.button button {
+  background-color: #EF9624;
+  max-width: 250px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+}
+
+.button button:hover{
+  background-color: #f88d01;
+}
+
+.button div{
+  display: grid;
+  align-items: center;
+  margin-left: -2rem;
+}
+
+.button div a{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.button div a:hover{
+  color: #f88d01;
+}

@@ -1,39 +1,21 @@
-import * as React from "react";
-import { Button, Card, Icon} from 'semantic-ui-react'
+import * as React from 'react';
 
-class ItemCount extends Components{
-    constructor(props){
-        super(props)
-        this.state = {counter: 1}
+export function ItemCount ({stock, initial, onAdd}){
+    const [contador, setContador] = React.useState(1);
+    const sumar = () => {
+        setContador(contador + 1)
     }
 
-    substract (){
-        this.setState({counter: this.state.counter - 1});
+    const restar = () => {
+        setContador(contador - 1)
     }
-
-    add (){
-        this.setState({counter: this.state.counter + 1});
-    }
-render (){
     return (
         <div>
-             <Card>
-      <Card.Content>
-       <h1>Producto</h1>
-       <h2>{this.state.counter}</h2>
-      </Card.Content>
-      <Card.Content extra>
-        <div className='ui two buttons'>
-          <Button onClick={this.substract.bind(this)}><Icon name='minus' /></Button>
-          <Button onClick={this.add.bind(this)}><Icon name='plus' /></Button>
-        </div>
-      </Card.Content>
-    </Card>
-
+            <span>{contador}</span>
+            <button onClick={sumar}> + </button>
+            <button onClick={restar}> - </button>
         </div>
     )
-  }
-
 }
 
-export default ItemCount;
+
