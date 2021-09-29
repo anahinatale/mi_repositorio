@@ -1,17 +1,27 @@
 import React from "react";
 import NavBar from "./Components/NavBar";
-import {ProductosLista} from "./Components/ItemList";
-import {ItemCount} from "./Components/ItemCount"
+import {ProductosLista} from "./Components/ItemListContainer";
+import {ItemCount} from "./Components/ItemCount";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Paginas } from "./Components/Paginas";
+import { DataProvider } from "./Context/DataProvider"
+import { Carrito } from "./Components/Carrito";
 
 
 function App() {
 
   return (
-    <div className="App">
+    <DataProvider>
+       <div className="App">
+    <Router>
+    <Route>
       <NavBar />
-      <ProductosLista />
-      <ItemCount stock="4" initial="9"/>
+      <Carrito />
+      <Paginas />
+    </Route>
+    </Router>
     </div>
+    </DataProvider>
   );
 }
 

@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-export function ItemCount ({stock, initial, onAdd}){
-    const [contador, setContador] = React.useState(1);
+export function ItemCount ({stock, initial}){
+    const [contador, setContador] = React.useState(initial = 1, stock = 6);
     const sumar = () => {
         setContador(contador + 1)
     }
@@ -12,8 +12,8 @@ export function ItemCount ({stock, initial, onAdd}){
     return (
         <div>
             <span>{contador}</span>
-            <button onClick={sumar}> + </button>
-            <button onClick={restar}> - </button>
+            <button className="boton1" onClick={sumar}> + </button>
+            <button className="boton1" onClick={restar}> - </button>
         </div>
     )
 }

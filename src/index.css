@@ -76,6 +76,7 @@ code {
   gap: 1rem 2rem;  
 }
 
+
 .button .btn{
   border: none;
   outline: 0;
@@ -115,3 +116,151 @@ code {
 .button div a:hover{
   color: #f88d01;
 }
+
+.principal {
+  width: 100%;
+}
+
+.formulario{
+width: 460px; 
+height: auto;
+margin: 150px auto;
+border-radius: 10px;  
+padding-top: 30px;
+padding-bottom: 20px;  
+background-color: #fbfbfb; 
+padding-left: 30px; 
+}
+
+
+.form-control{
+background-color: #fbfbfb; 
+width: 408px; 
+height: 40px; 
+border-radius: 5px;  
+border-style: solid; 
+border-width: 1px; 
+border-color: #F9E99A ; 
+margin-top: 10px;  
+padding-left: 10px;
+margin-bottom: 20px; 
+}
+
+
+.form-control_mensaje{
+background-color: #fbfbfb; 
+width: 405px; 
+height: 150px; 
+border-radius: 5px;  
+border-style: solid; 
+border-width: 1px; 
+border-color: #F9E99A; 
+margin-top: 10px;  
+padding-left: 10px;
+margin-bottom: 20px; 
+padding-top: 15px; 
+}
+
+button{
+height: 45px; 
+padding-left: 5px;
+padding-right: 5px;   
+margin-bottom: 20px; 
+margin-top: 10px;   
+text-transform: uppercase;
+background-color: #f88d01;
+border-color: #f88d01; 
+border-style: solid; 
+border-radius: 10px;  
+width: 420px;   
+cursor: pointer;
+}
+
+
+button p{
+color: #fff; 
+}
+
+
+.aviso{
+font-size: 13px;  
+color: #0e0e0e;  
+}
+
+
+.titulo_form{
+font-size: 39px;  
+text-align: letf; 
+padding-bottom: 20px; 
+color: #f88d01;
+}
+
+
+
+::-webkit-input-placeholder {
+color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+outline:0;
+border: 1px solid #f88d01;
+}
+
+
+.formulario textarea:focus{
+outline:0;
+border: 1px solid #f88d01;
+}
+
+.boton1{
+  width: 70px;
+  background-color: #EF9624;
+  color: #0e0e0e;
+}
+
+.carrito_contenedor{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 300ms ease-in-out;
+  background-color: rgba(77, 75, 75, 0.6);
+  z-index: 2;
+  padding-bottom: 5rem;
+  visibility: hidden;
+}
+
+.carrito{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)scale(.8);
+  border-radius: 10px;
+  width: 60%;
+  height: 80%;
+  overflow-x: scroll; 
+  transition: all 300ms ease-in-out;
+  visibility: hidden; 
+}
+
+.carrito h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.carritos_contenedor.show{
+  visibility: visible;
+}
+
+.carrito.show{
+  transform: translate(-50%, -50%)scale(1.1);
+  visibility: visible;
+}
+
