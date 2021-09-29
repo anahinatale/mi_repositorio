@@ -16,8 +16,8 @@ function App() {
     <Router>
     <Route>
       <NavBar />
-      <Carrito />
       <Paginas />
+      <Carrito />
     </Route>
     </Router>
     </div>
