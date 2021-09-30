@@ -2,8 +2,19 @@ import CartWidget from './CartWidget';
 import './NavBar.css';
 import Logo from "../imagenes/logo.png";
 import {Link} from "react-router-dom";
+import {DataContext} from "../Context/DataProvider";
+import { useContext } from 'react';
 
 function NavBar () {
+
+   const value = useContext (DataContext);
+   const [menu, setMenu] = value.menu;
+   const [carrito] =value.carrito;
+
+   const toogleMenu = () => {
+      setMenu (!menu)
+   }
+
    return (
    <div className="NavBar">
       <Link to="">
@@ -14,9 +25,9 @@ function NavBar () {
       <Link to="/">Inicio</Link>
       <Link to="/productos">Productos</Link>
       <Link to="/contacto">Contacto</Link>
-    <div>
+    <div onClick= {toogleMenu}>
      <CartWidget />
-     <span className="item_total">0</span>
+     <h2 className="item_total">{carrito.lenght}</h2>
     </div>   
    </div>
    );

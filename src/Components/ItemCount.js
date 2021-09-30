@@ -11,8 +11,8 @@ export function ItemCount ({stock, initial}){
     }
     return (
         <div>
-            <span>{contador}</span>
             <button className="boton1" onClick={sumar}> + </button>
+            <span>{contador}</span>
             <button className="boton1" onClick={restar}> - </button>
         </div>
     )

@@ -215,13 +215,28 @@ border: 1px solid #f88d01;
 
 .formulario textarea:focus{
 outline:0;
-border: 1px solid #f88d01;
+border: 1px solid #EF9624;
 }
 
 .boton1{
-  width: 70px;
+  width: 40px;
   background-color: #EF9624;
-  color: #0e0e0e;
+  color: white;
+  margin: 5px;
+  justify-content:center;
+  margin-top: 3rem;
+}
+
+.boton1:hover{
+  background-color: #f88d01;
+}
+
+.btn_pay{
+  background-color: #EF9624;
+}
+
+.btn_pay:hover{
+  background-color: #f88d01;
 }
 
 .carrito_contenedor{
@@ -248,6 +263,7 @@ border: 1px solid #f88d01;
   overflow-x: scroll; 
   transition: all 300ms ease-in-out;
   visibility: hidden; 
+  opacity: 0;
 }
 
 .carrito h2 {
@@ -262,5 +278,69 @@ border: 1px solid #f88d01;
 .carrito.show{
   transform: translate(-50%, -50%)scale(1.1);
   visibility: visible;
+  opacity: 1;
+  background-color: white;
 }
+
+.carrito_close img{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transform: all 300ms ease-in-out;
+  margin: 3rem 0 0 2rem;
+}
+
+.carrito_close img:hover{
+  border: 3px solid #EF9624;
+  border-radius: 50%;
+}
+
+.carrito_center{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.carrito_item{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  width: 80%;
+  margin: 2rem auto;
+  box-shadow: 0 1px 4px #EF9624;
+  border-radius: 5px;
+}
+.card{
+  width: 9rem;  
+}
+
+.carrito_item h3{
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+}
+
+.carrito_item .precio{
+  color: rgba(0, 0, 0, 0.842);
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.remove_item img{
+  padding: 3rem;
+  cursor:pointer;
+  transform: all 300ms ease-in-out;
+}
+
+.remove_item img:hover{
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5)
+}
+
+
+
+
+
+
 
